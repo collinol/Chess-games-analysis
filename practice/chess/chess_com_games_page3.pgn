@@ -1,0 +1,273 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.20"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "ErikErik77777"]
+[Result "0-1"]
+[WhiteElo "1060"]
+[BlackElo "1304"]
+[TimeControl "600"]
+[EndTime "20:01:20 PDT"]
+[Termination "ErikErik77777 won by checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Bb7 7. Bb5 Nf6 8.
+Bg5 Be7 9. f3 O-O 10. O-O Nxe4 11. fxe4 Bxg5 12. Bc4 Qe7 13. Rae1 c5 14. Qd3 a5
+15. Qg3 Bf6 16. Qc7 Ba6 17. Bxa6 Rxa6 18. Qb7 Rfa8 19. Nd5 Qd6 20. Qc7 b5 21. g4
+Be5 22. Rf2 Qxc7 23. Nxc7 Bxc7 24. Rd1 d6 25. Rfd2 Re8 26. Re2 d5 27. Rxd5 Rc8
+28. e5 Rg6 29. h3 Bb6 30. Kf1 Rh6 31. g5 Rxh3 32. e6 fxe6 33. Rxe6 Rf3+ 34. Kg2
+Rcf8 35. Rxb6 Rf2+ 36. Kg3 R2f3+ 37. Kg4 g6 38. Rd3 R8f4# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.20"]
+[Round "-"]
+[White "bojongos"]
+[Black "GetSchwifty10"]
+[Result "1-0"]
+[WhiteElo "1232"]
+[BlackElo "972"]
+[TimeControl "600"]
+[EndTime "20:11:44 PDT"]
+[Termination "bojongos won by checkmate"]
+
+1. e4 e5 2. f4 Nc6 3. Nf3 d6 4. Bc4 Bg4 5. c3 Nf6 6. Qb3 Be6 7. Bxe6 fxe6 8.
+Qxb7 Na5 9. Qa6 c5 10. fxe5 Ng4 11. b4 cxb4 12. cxb4 Qc8 13. Qxa5 Qc4 14. Qa4+
+Kf7 15. Nc3 d5 16. Qd7+ Kg6 17. Qxe6+ Kh5 18. Qf5+ Kh6 19. Qg5# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.20"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "JulesTellier"]
+[Result "0-1"]
+[WhiteElo "867"]
+[BlackElo "1112"]
+[TimeControl "600"]
+[EndTime "20:19:52 PDT"]
+[Termination "JulesTellier won by checkmate"]
+
+1. e4 e5 2. Nf3 d6 3. d4 Be7 4. Bb5+ c6 5. Bc4 d5 6. exd5 cxd5 7. Bb5+ Bd7 8.
+Qd3 e4 9. Qe2 exf3 10. gxf3 Nf6 11. Nc3 O-O 12. Be3 Bb4 13. O-O-O Bxc3 14. bxc3
+a6 15. Bd3 Qa5 16. Kd2 Nc6 17. Ke1 Qxc3+ 18. Kf1 Bh3+ 19. Kg1 Rfe8 20. Qd2 Qxd2
+21. Bxd2 Nxd4 22. Bf5 Nxf5 23. Bc3 Nh4 24. f4 Nf3# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.20"]
+[Round "-"]
+[White "taopai"]
+[Black "GetSchwifty10"]
+[Result "0-1"]
+[WhiteElo "809"]
+[BlackElo "946"]
+[TimeControl "600"]
+[EndTime "20:31:45 PDT"]
+[Termination "GetSchwifty10 won by checkmate"]
+
+1. g3 e5 2. d3 d5 3. e3 Nc6 4. Nd2 Nf6 5. Bg2 Bb4 6. c3 Bc5 7. c4 d4 8. b3 O-O
+9. Bb2 Bg4 10. f3 Bh5 11. g4 Bg6 12. h4 h5 13. f4 exf4 14. Bxc6 bxc6 15. exf4
+hxg4 16. b4 Bxb4 17. Bxd4 Bh5 18. Bxf6 Qxf6 19. Rb1 g3 20. Qxh5 Qxf4 21. Rxb4
+Rfe8+ 22. Ne4 Qe3+ 23. Ne2 Qxd3 24. Rf1 Qxe4 25. Rxf7 Qh1+ 26. Kd2 Rad8+ 27. Kc2
+Rxe2+ 28. Kc3 Qc1+ 29. Kb3 Qc2+ 30. Ka3 Re3+ 31. Rb3 Rxb3+ 32. axb3 Qc1+ 33. Ka4
+Qa1+ 34. Kb4 Rb8+ 35. Kc5 Qa5+ 36. Kd4 Qxh5 37. c5 Qxf7 38. b4 Rd8+ 39. Kc3 g2
+40. h5 g1=Q 41. h6 gxh6 42. b5 Qg3+ 43. Kb4 Qfb3+ 44. Ka5 Qa3# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.21"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "EDSFSGG"]
+[Result "1-0"]
+[WhiteElo "1016"]
+[BlackElo "887"]
+[TimeControl "600"]
+[EndTime "11:39:45 PDT"]
+[Termination "GetSchwifty10 won by checkmate"]
+
+1. e4 e5 2. Nf3 Nf6 3. d4 Nc6 4. Bg5 h6 5. Bxf6 gxf6 6. Bc4 Nb4 7. O-O Nc6 8. d5
+Ne7 9. d6 cxd6 10. Qxd6 Nc6 11. Qd5 Rg8 12. Qxf7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.22"]
+[Round "-"]
+[White "jeff-haruhy"]
+[Black "GetSchwifty10"]
+[Result "1-0"]
+[WhiteElo "1070"]
+[BlackElo "955"]
+[TimeControl "600"]
+[EndTime "8:23:22 PDT"]
+[Termination "jeff-haruhy won - game abandoned"]
+
+1. e4 e5 2. Nf3 Nf6 3. Nc3 d5 4. exd5 Nxd5 5. Bc4 c6 6. Bxd5 cxd5 7. d4 Bg4 8.
+dxe5 Bxf3 9. Qxf3 Bb4 10. O-O O-O 11. Nxd5 Bc5 12. Nf4 Nc6 13. Qg3 g6 14. e6 f6
+15. Be3 b6 16. Bxc5 bxc5 17. Qf3 Qd6 18. Rae1 Rae8 19. Qg3 g5 20. Nh5 Qd2 21.
+Qc7 Qd5 22. Qxa7 Re7 23. Qa6 Rxe6 24. Qa7 Re7 25. Qb6 Rxe1 26. Nxf6+ Rxf6 27.
+Rxe1 Kg7 28. f3 Qd4+ 29. Kf1 Nb4 30. c3 Qd3+ 31. Kg1 Nd5 32. Qxc5 Qd2 33. Rf1
+Qe3+ 34. Qxe3 Nxe3 35. Re1 Nc2 36. Rc1 Ne3 37. c4 h5 38. c5 Rc6 39. b4 Nd5 40.
+b5 Rc7 41. b6 Nxb6 42. cxb6 Rb7 43. Rc7+ Kg6 44. Rxb7 Kf5 45. Rf7+ Ke5 46. b7
+1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "s145"]
+[Black "GetSchwifty10"]
+[Result "0-1"]
+[WhiteElo "823"]
+[BlackElo "1019"]
+[TimeControl "600"]
+[EndTime "13:05:45 PDT"]
+[Termination "GetSchwifty10 won - game abandoned"]
+
+1. e4 e5 2. f4 Nc6 3. d3 Bd6 4. Nf3 Nf6 5. Nc3 O-O 6. b4 Bxb4 7. Rb1 Bxc3+ 8.
+Bd2 Ba5 9. Rb2 d5 10. exd5 Nxd5 11. fxe5 Bg4 12. Be2 Qd7 13. Qc1 Rae8 14. Rb5 b6
+15. h3 Bh5 16. g4 Bg6 17. d4 Nc3 18. Kf1 Nxb5 19. Bxb5 Qd5 20. Be2 Nxd4 21. Be3
+c5 22. Rg1 Nxf3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "44654"]
+[Black "GetSchwifty10"]
+[Result "1-0"]
+[WhiteElo "1210"]
+[BlackElo "985"]
+[TimeControl "600"]
+[EndTime "14:38:33 PDT"]
+[Termination "44654 won by checkmate"]
+
+1. d4 d5 2. Bf4 Nc6 3. e3 f6 4. c3 e5 5. dxe5 fxe5 6. Qh5+ g6 7. Qf3 exf4 8.
+Qxf4 Be6 9. Nf3 Qd7 10. Ne5 Nxe5 11. Qxe5 Bg7 12. Qf4 O-O-O 13. a4 Nf6 14. a5
+Nh5 15. Qd4 Rhf8 16. Qd3 c6 17. b4 Qf7 18. f3 Bf5 19. Qd2 Be5 20. g4 Ng3 21.
+hxg3 Be6 22. f4 Bd6 23. g5 Qf5 24. Rxh7 Qg4 25. Qg2 c5 26. Be2 Qf5 27. c4 cxb4
+28. Nd2 Qc2 29. Rb1 dxc4 30. Qxb7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "eslamhamdy99"]
+[Result "1-0"]
+[WhiteElo "1030"]
+[BlackElo "852"]
+[TimeControl "600"]
+[EndTime "14:41:53 PDT"]
+[Termination "GetSchwifty10 won by checkmate"]
+
+1. e4 e5 2. Nf3 Bc5 3. Nxe5 Nf6 4. d4 Nxe4 5. dxc5 Nxc5 6. Qe2 Ne6 7. Nc3 O-O 8.
+Qg4 Nc5 9. Bh6 Nc6 10. Qxg7# 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "AssNTitties69"]
+[Result "0-1"]
+[WhiteElo "997"]
+[BlackElo "1139"]
+[TimeControl "600"]
+[EndTime "14:47:02 PDT"]
+[Termination "AssNTitties69 won by resignation"]
+
+1. e4 e5 2. Nf3 Nc6 3. c3 Bc5 4. d4 d6 5. d5 Nce7 6. b4 Bb6 7. a4 a5 8. Bb5+ Bd7
+9. Bxd7+ Qxd7 10. O-O f5 11. Ng5 fxe4 12. Nxe4 Nf6 13. Nbd2 O-O 14. Nxf6+ Rxf6
+15. Ne4 Rff8 16. Qd3 Qf5 17. Ng3 Bxf2+ 18. Kh1 Qxd3 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "joakooo"]
+[Result "0-1"]
+[WhiteElo "947"]
+[BlackElo "899"]
+[TimeControl "600"]
+[EndTime "15:03:59 PDT"]
+[Termination "joakooo won by checkmate"]
+
+1. e4 e6 2. d4 d5 3. e5 Nc6 4. Nf3 f6 5. Bb5 fxe5 6. Nxe5 Bd7 7. Be2 Nf6 8. Bg5
+Bd6 9. f4 Qe7 10. Bh5+ g6 11. Bf3 O-O-O 12. Nc3 Qe8 13. b3 Bb4 14. Qd2 Qf8 15.
+O-O h5 16. a3 Ba5 17. b4 Bb6 18. a4 Nxb4 19. a5 Bxa5 20. Rxa5 Kb8 21. Na2 Nc6
+22. Nxg6 Ne4 23. Qe1 Qf5 24. Nxh8 Rxh8 25. Nb4 Rg8 26. Be2 Nxd4 27. Ba6 Nxg5 28.
+Qb1 Nh3+ 29. Kh1 Qe4 30. Rf3 Nxf3 31. gxf3 Qxf3# 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "Abu-brrack"]
+[Black "GetSchwifty10"]
+[Result "0-1"]
+[WhiteElo "854"]
+[BlackElo "983"]
+[TimeControl "600"]
+[EndTime "15:06:50 PDT"]
+[Termination "GetSchwifty10 won by resignation"]
+
+1. e4 e5 2. Qf3 Nf6 3. Bb5 c6 4. Bc4 d5 5. exd5 cxd5 6. Bxd5 Nxd5 7. Nh3 Bd6 8.
+Ng5 O-O 9. Qxf7+ Rxf7 10. Nxf7 Kxf7 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "jandrolo"]
+[Black "GetSchwifty10"]
+[Result "0-1"]
+[WhiteElo "928"]
+[BlackElo "1011"]
+[TimeControl "600"]
+[EndTime "15:16:08 PDT"]
+[Termination "GetSchwifty10 won by resignation"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. c3 Nf6 5. d3 d5 6. Bb3 d4 7. O-O Bc5 8. Nbd2
+O-O 9. Re1 Bg4 10. h3 Bxf3 11. Nxf3 dxc3 12. bxc3 Nh5 13. Nh4 Qxh4 14. Rb1 Qxf2+
+15. Kh1 Ng3+ 16. Kh2 Qf6 17. Qg4 Bf2 18. Rf1 Rad8 19. Rb2 Rxd3 20. Rbxf2 Qd6 21.
+Rxf7 Rxf7 22. Rxf7 g6 23. Rg7+ Kxg7 24. Bg5 0-1
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.23"]
+[Round "-"]
+[White "GetSchwifty10"]
+[Black "wolf2017"]
+[Result "1-0"]
+[WhiteElo "1045"]
+[BlackElo "1066"]
+[TimeControl "600"]
+[EndTime "17:55:57 PDT"]
+[Termination "GetSchwifty10 won on time"]
+
+1. e4 e5 2. Nc3 Bb4 3. Nf3 d6 4. d4 exd4 5. Nxd4 c5 6. Nb5 Ke7 7. Bg5+ f6 8. Bh4
+Nh6 9. Bd3 Nf7 10. O-O a6 11. Na3 Bxa3 12. bxa3 Qa5 13. Nd5+ Kd8 14. Rb1 Qxa3
+15. Nb6 Ra7 16. Nxc8 Kxc8 17. Qg4+ Nd7 18. Qxg7 Rf8 19. Qxh7 b5 20. Bxf6 Nxf6
+21. Qf5+ Nd7 22. Rfe1 Qxa2 23. e5 dxe5 24. Be4 Nd6 25. Qg4 Qf7 26. Rf1 Rg8 27.
+Qh3 Nxe4 28. Rbe1 Ng5 29. Qg3 Qf5 30. Kh1 e4 31. Re3 Ne5 32. f3 1-0
+
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2017.04.29"]
+[Round "-"]
+[White "Larrow"]
+[Black "GetSchwifty10"]
+[Result "1-0"]
+[WhiteElo "1144"]
+[BlackElo "1024"]
+[TimeControl "600"]
+[EndTime "9:20:06 PDT"]
+[Termination "Larrow won by resignation"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 d6 4. h3 Nf6 5. g3 Be6 6. d4 d5 7. dxe5 Nd7 8. exd5
+Bxd5 9. Nxd5 Ndxe5 10. Bb5 Bd6 11. Bxc6+ Nxc6 12. O-O h6 13. Re1+ Be7 14. Nxe7
+Nxe7 15. Bf4 O-O 16. Ne5 f6 17. Nd7 Rf7 18. Qd3 g5 19. Bd2 a5 20. Bc3 f5 21. Qd4
+Rh7 22. Nf6+ Kf8 23. Nxh7+ 1-0
