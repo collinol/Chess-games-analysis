@@ -1,0 +1,64 @@
+from pylab import *
+import numpy as np
+from collections import Counter
+from matplotlib.colors import LogNorm
+import matplotlib.pyplot as plt
+allgames = open('AllGames_more.txt','r')
+def FileGetter(filename):
+	filename.seek(0)
+	ratings_w = []
+	pd_w = []
+	ratings_l = []
+	pd_l = []
+	ratings_d = []
+	pd_d = []
+	for line in filename:
+		#if abs(int(line.split(' ')[1])) < 35 and abs(int(line.split(' ')[3])) < 35 and abs(int(line.split(' ')[5])) <35:
+		ratings_w.append(line.split(' ')[0])
+		pd_w.append(int(line.split(' ')[1]))
+		ratings_l.append(line.split(' ')[2])
+		pd_l.append(int(line.split(' ')[3]))
+		ratings_d.append(line.split(' ')[4])
+		pd_d.append(int(line.split(' ')[5].split('\n')[0]))
+	
+	return(pd_w,pd_l,pd_d)
+games = FileGetter(allgames)
+
+WinFreq = {i:games[0].count(i) for i in set(games[0]) }
+LossFreq = {i:games[1].count(i) for i in set(games[1]) }
+DrawFreq= {i:games[2].count(i) for i in set(games[2]) }
+
+WinFreq = Counter(WinFreq)
+LossFreq = Counter(LossFreq)
+DrawFreq = Counter(DrawFreq)
+Total = WinFreq + LossFreq  + DrawFreq
+x = []
+y = []
+c = []
+for k in sorted(Total.keys()):
+	try:
+		print k, '\t',WinFreq[k],DrawFreq[k],LossFreq[k],'\t',(WinFreq[k])/float(LossFreq[k]+DrawFreq[k])
+		x.append(k)
+		y.append(WinFreq[k]+DrawFreq[k]+LossFreq[k])
+		c.append(WinFreq[k]/float(LossFreq[k]+DrawFreq[k]))
+		#print k,'\t total games:',Total[k],'\t Whites Win or Draw Percent \t', (WinFreq[k]+DrawFreq[k])/LossFreq[k]
+	except: continue
+
+
+
+for i,j,k in zip(x,y,c):
+	if k>1: k =1
+	bar(i,j,color = ((1-k,0,k)))
+
+
+
+show()
+quit()
+
+
+plot(games[0],games[1],'bo',label = 'white win',alpha = 1)
+plot(games[2],games[3],'ro',label = 'white loss',alpha = 1)
+legend(loc='upper right')
+x = np.linspace(0,3000,100)
+plot(x,[0]*len(x),'k')
+#show()

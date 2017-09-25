@@ -1,0 +1,86 @@
+from numpy import *
+import matplotlib.pyplot as plt
+white_pawns = open('WhitePawnMoves.txt','r')
+white_nights = open('WhiteKnightMoves.txt','r')
+white_bishops = open('WhiteBishopMoves.txt','r')
+white_rooks = open('WhiteRookMoves.txt','r')
+white_queen = open('WhiteQueenMoves.txt','r')
+white_king  = open('WhiteKingMoves.txt','r')
+black_pawns = open('BlackPawnMoves.txt','r')
+black_nights = open('BlackKnightMoves.txt','r')
+black_bishops = open('BlackBishopMoves.txt','r')
+black_rooks = open('BlackRookMoves.txt','r')
+black_queen = open('BlackQueenMoves.txt','r')
+black_king = open('BlackKingMoves.txt','r')
+
+
+#try to make this a function before writing a thousand lines
+
+letters = "a b c d e f g h"
+letters = letters.split(" ")
+nums = "8 7 6 5 4 3 2 1"
+nums = nums.split(" ")
+#use this ^^ for labels
+
+#assign each square to [i,j] pair
+
+
+Board = {}
+for i in range(8):
+	for j in range(8):
+		position = letters[j]+nums[i]
+		Board[position] = ((i,j))
+
+def matrix_freq(piece_file):
+	piece_file.seek(0)
+	board = zeros((8,8))
+	for line in piece_file:
+		line = line.split('\n')[0]
+		try:board[Board[line.split(' ')[0]][0],Board[line.split(' ')[0]][1]] = line.split(' ')[1]
+		except:pass
+	boardmax,boardmin = board.max(), board.min()
+	board = (board-boardmin) / (boardmax - boardmin)
+	rotated = rot90(board,2) 
+
+	return rotated
+
+c = matrix_freq(black_bishops)
+
+#print matrix_freq(white_pawns)
+fig, ax = plt.subplots()
+#plt.pcolor(c, edgecolors='k', linestyle= 'dashed', linewidths=0.2, cmap='', vmin=0.0, vmax=2.0)
+cbar = plt.pcolor(c, edgecolors='k', linestyle= 'solid', linewidths=0.2, cmap='viridis')
+plt.colorbar(cbar)
+
+title = "Frequency of Black Bishop Positions"
+
+plt.title(title)
+
+import matplotlib.ticker as ticker
+#set labels to center of grids
+ax.xaxis.set_major_formatter(ticker.NullFormatter())
+ax.xaxis.set_minor_locator(ticker.FixedLocator([0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5]))
+ax.xaxis.set_minor_formatter(ticker.FixedFormatter(['a','b','c','d','e','f','g','h'])) 
+
+ax.yaxis.set_major_formatter(ticker.NullFormatter())
+ax.yaxis.set_minor_locator(ticker.FixedLocator([0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5]))
+ax.yaxis.set_minor_formatter(ticker.FixedFormatter(['1','2','3','4','5','6','7','8'])) 
+
+plt.show()
+quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

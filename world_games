@@ -1,0 +1,233 @@
+from pylab import *
+import numpy as np
+import os
+
+
+f = open("WorldGames_sample.pgn",'r')
+game_records = []
+cats = ['Event ', 'Site ','Date ','Round ','White ','Black ','Result ','WhiteElo ','BlackElo ','TimeControl ','EndTime ','Termination '
+]
+
+winner = ''
+for line in f:  
+
+
+	line = line.split('\n')[0].strip('[').strip(']').split('"')[0:2]
+	if line[0] == 'Event ':
+		single_game = []
+		moves = []
+	if line[0] == 'Date ' or line[0] == 'White ' or line[0] == 'Black ' or line[0] == 'Termination ':
+	
+		single_game.append((line[0],line[1]))
+
+	
+	if line[0] == 'Result ':
+		if line[1] == '0-1':
+			winnner = 'b'
+			single_game.append(('winner','w'))	
+		if line[1] == '1-0':
+			winner = 'w'
+			single_game.append(('winner','b'))	
+		if line[1] == '1/2-1/2':
+		 	winner = 'd'
+			single_game.append(('winner','d'))	
+
+	if line[0] == 'WhiteElo ' and (winner == 'w'):
+		single_game.append(('Rating',line[1]))
+	
+
+	if line[0] == 'BlackElo ' and (winner == 'b'):
+		single_game.append(('Rating',line[1]))
+	
+	if line[0] == 'WhiteElo ' and winner =='d':
+		single_game.append(('Rating',line[1]))
+
+	
+
+	if line[0] not in cats:
+		moves.append(line[0])
+
+	if line[0] == '':
+		if len(moves) != 1:
+			single_game.append(('moves',moves))
+	
+	if len(single_game) == 5: 
+		game_records.append(single_game)
+	
+
+	
+
+#points
+Points_pieces ={('a',1),('b',1),('c',1),('d',1),('e',1),('f',1),('g',1),('h',1),('B',3),('N',3),('Q',9),('R',5),('K',0)}
+Points_pieces = dict(Points_pieces)
+
+Points_board = {}
+letters = "a b c d e f g h"
+letters = letters.split(" ")
+nums = "1 2 3 4 5 6 7 8"
+nums = nums.split(" ")
+for l in letters:
+	for n in nums:
+		if n == '7' or n == '2':
+			Points_board[l+n] = 1
+		if n == '8' or n == '1':
+			if l == 'a' or l == 'h':
+				Points_board[l+n] = 5
+			if l == 'b' or l == 'g':
+				Points_board[l+n] = 3
+			if l == 'c' or l == 'f':
+				Points_board[l+n] = 3
+			if l == 'd':
+				Points_board[l+n] = 9
+			if l == 'e':
+				Points_board[l+n] = 0
+		else: Points_board[l+n] = 0
+
+
+
+ratings_w = []
+ratings_l = []
+ratings_d = []
+pd_w = []
+pd_l = []
+pd_d = []
+for i in game_records:
+	if i[4][0] != 'Rating':continue
+	wpoints = 0
+	bpoints = 0
+	date = i[0]
+	#datenum = date[1].split('.')
+	#datenum = int(datenum[1
+	rating = i[4]
+	result = i[3]
+	try:moves = i[5]
+	except: break
+
+	complete_moves = []
+	for j in moves[1][2:-1]:
+		for m in j.split(' '):
+			if m != '':
+				complete_moves.append(m)
+	
+	moves = complete_moves[0:-1]
+
+	Moves = {}
+
+	for m,pair in enumerate(moves):
+		if '.' in pair:
+			try:Moves[int(pair.strip('.'))] = ((moves[m+1],moves[m+2]))
+			except:continue
+	
+
+	for k in sorted(Moves.keys()):
+		#NEED TO DEAL WITH PAWN=Q+ EXCEPTIONS!!
+		w = Moves[k][0]
+		b = Moves[k][1]
+		#excluding castling
+		if '+' in w: w = w.strip('+')
+		if '#' in w: w = w.strip('#')
+		if '+' in b: b = b.strip('+')
+		if '#' in b: b = b.strip('#')
+		if '=' in w: w = w.strip('=')
+		if '=' in b: b = b.strip('=')
+		if '=' in w: 
+			if 'x' not in w:
+				w = w.split('=')[1]+w.split('=')[0]
+			if 'x' in w:
+				w = w.split('=')[1]+w.split('=')[0][1:]
+		
+		if '=' in b: 
+			if 'x' not in b:
+				b = b.split('=')[1]+b.split('=')[0]
+			if 'x' in b:
+				b = b.split('=')[1]+b.split('=')[0][1:]
+			
+		if w[0] != 'O':
+			#moves without capture
+			if 'x' not in w:
+				if w[0].isupper():			
+					Points_board[w[1:2]] = Points_pieces[w[0]]
+				else:	Points_board[w] = 1
+			else:
+				#replacement
+				#get current points on square
+				#add to white's total
+				#replace with new points
+				wpoints += int(Points_board[w.split('x')[1]])
+				Points_board[w.split('x')[1]] = Points_pieces[w[0]]
+		if b[0] != 'O':
+			#moves without capture
+			if 'x' not in b:
+				if b[0].isupper():				
+					Points_board[b[1:2]] = Points_pieces[b[0]]
+				else:	Points_board[b] = 1
+					
+			else:
+				#replacement
+				#get current points on square
+				#add to black's total
+				#replace bith new points
+				bpoints += int(Points_board[b.split('x')[1]])
+				Points_board[b.split('x')[1]] = Points_pieces[b[0]]
+	
+		#castle cases
+		if w == 'O-O':
+			Points_board['b1'] = 0
+			Points_board['c1'] = 5
+		if w == 'O-O-O':
+			Points_board['f1'] = 0
+			Points_board['e1'] =5
+		if b == 'O-O':
+			Points_board['b8'] = 0
+			Points_board['c8'] = 5
+		if b == 'O-O-O':
+			Points_board['f8'] = 0
+			Points_board['e8'] =5
+
+	#calculate total - gonna be different for worldwide (me not involved), not sure how though
+	
+
+	
+	
+	my_net = wpoints-bpoints
+
+	#print result[1]
+	if result[1] == 'w':
+		pd_w.append(my_net)
+		ratings_w.append(rating[1])
+	if result[1] == 'b':
+		ratings_l.append(rating[1])
+		pd_l.append(my_net)
+	else: 
+		ratings_d.append(rating[1])
+		pd_d.append(my_net)
+
+
+	#sys.stdout.write("{:<25}{:<42}{:<15}\n".format('Date: '+date[1], result[1],'Final Point Difference '+str(my_net)))	
+
+
+print len(pd_w)+len(pd_l)
+plot(ratings_w,pd_w,'bo',label ='White Win',alpha =.5)
+plot(ratings_l,pd_l,'ro',label ='White Loss',alpha = .5)
+#plot(ratings_d,pd_d,'ko',label ='draw')
+xlabel('Rating of Winning Player')
+ylabel('Point Difference at the End of the Game from Whites Perspective')
+title('Chess Game Results')
+legend(loc='upper right')
+x = np.linspace(0,3000,100)
+plot(x,[0]*len(x),'k')
+show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
